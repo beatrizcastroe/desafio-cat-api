@@ -13,6 +13,9 @@ Este projeto faz parte do processo seletivo do Itau: um desafio técnico com o o
 
 Banco de dados MySQL e The cats API
 
+## Tecnologias
+Spring / Spring Cloud Task / Spring Data / Hibernate / JPA / Spring Open Feign
+
 ## Pré-requisitos da Montagem
 
 1. Durante esse projeto, foi utilizado o banco de dados local do MySQL. 
