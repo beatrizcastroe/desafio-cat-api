@@ -10,6 +10,7 @@ import java.util.List;
 public interface BreedRepository extends JpaRepository<Breed, String> {
 
     List<Breed> findByTemperamentContaining(String temperament);
+
     List<Breed> findByOriginContaining(String origin);
 
 }

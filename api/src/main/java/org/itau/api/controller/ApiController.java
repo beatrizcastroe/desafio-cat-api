@@ -1,11 +1,13 @@
 package org.itau.api.controller;
 
-import org.itau.api.model.Breed;
 import org.itau.api.model.dto.BreedDto;
 import org.itau.api.service.ApiService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -30,7 +32,7 @@ public class ApiController {
     }
 
     @GetMapping("/origin")
-    public ResponseEntity<List<BreedDto>> findBreedByOrigin (@RequestParam ("origin") String origin) {
+    public ResponseEntity<List<BreedDto>> findBreedByOrigin(@RequestParam("origin") String origin) {
         List<BreedDto> listBreeds = BreedDto.converter(apiService.findBreedByOrigin(origin));
 
         return ResponseEntity.ok(listBreeds);

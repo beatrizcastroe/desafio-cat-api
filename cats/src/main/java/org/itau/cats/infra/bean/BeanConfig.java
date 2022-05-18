@@ -1,7 +1,6 @@
 package org.itau.cats.infra.bean;
 
 import org.dozer.DozerBeanMapper;
-import org.itau.cats.infra.configuration.TaskListener;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

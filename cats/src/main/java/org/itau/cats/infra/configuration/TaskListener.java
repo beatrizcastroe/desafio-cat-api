@@ -5,7 +5,6 @@ import org.itau.cats.service.CatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.task.listener.TaskExecutionListener;
 import org.springframework.cloud.task.repository.TaskExecution;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 

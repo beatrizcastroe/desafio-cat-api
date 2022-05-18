@@ -1,87 +1,87 @@
 {
-	"info": {
-		"_postman_id": "2ec6e93f-7395-4591-8df1-ec49c9ad52a1",
-		"name": "TheCats",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
-	},
-	"item": [
-		{
-			"name": "[200] - GetAllBreeds",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/breeds",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"breeds"
-					],
-					"query": [
-						{
-							"key": "x-api-key",
-							"value": "3723066e-3394-48a5-bb9f-6e63b5df99e3",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "[200] - GetBreedsByTemperament",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/breeds/temperament?temperament=Intelligent, Interactive, Lively, Playful, Sensitive",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"breeds",
-						"temperament"
-					],
-					"query": [
-						{
-							"key": "temperament",
-							"value": "Intelligent, Interactive, Lively, Playful, Sensitive"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "[200] - GetBreedsByOrigin",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/breeds/origin?origin=United States",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"breeds",
-						"origin"
-					],
-					"query": [
-						{
-							"key": "origin",
-							"value": "United States"
-						}
-					]
-				}
-			},
-			"response": []
-		}
-	]
+  "info": {
+    "_postman_id": "2ec6e93f-7395-4591-8df1-ec49c9ad52a1",
+    "name": "TheCats",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "[200] - GetAllBreeds",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/breeds",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "breeds"
+          ],
+          "query": [
+            {
+              "key": "x-api-key",
+              "value": "3723066e-3394-48a5-bb9f-6e63b5df99e3",
+              "disabled": true
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "[200] - GetBreedsByTemperament",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/breeds/temperament?temperament=Intelligent, Interactive, Lively, Playful, Sensitive",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "breeds",
+            "temperament"
+          ],
+          "query": [
+            {
+              "key": "temperament",
+              "value": "Intelligent, Interactive, Lively, Playful, Sensitive"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "[200] - GetBreedsByOrigin",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/breeds/origin?origin=United States",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "breeds",
+            "origin"
+          ],
+          "query": [
+            {
+              "key": "origin",
+              "value": "United States"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
 }
