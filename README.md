@@ -33,7 +33,7 @@ A documentação swagger da ApiApplication pode ser acessada ao iniciá-la no ma
 
 ## Pontos a melhorar
 
-Visto o curto prazo, alguns pontos a melhorar são: Deploy do microserviço na nuvem, desacoplamento de algumas funções, melhor documentação do projeto e implementação da parte bônus do desafio.
+Visto o curto prazo, alguns pontos a melhorar são: Deploy do microserviço na nuvem, implementação dos testes unitários, desacoplamento de algumas funções, melhor documentação do projeto e implementação da parte bônus do desafio.
 
 ## Sobre a autora
 
