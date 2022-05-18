@@ -9,4 +9,13 @@ Este projeto faz parte do processo seletivo do Itau: um desafio técnico com o o
 #### Api(Spring boot): Recebe as requisições e retorna para o cliente os dados coletados pelo Cat, contém entidades e repositório.
 #### Cat (Feign): Faz a coleta dos dados na The Cat Api e salva no banco de dados.
 
+## Integrações
+
+Banco de dados MySQL e The cats API
+
+## Pontos a melhorar
+
+Visto o curto prazo, alguns pontos a melhorar são: 
+
+
 
