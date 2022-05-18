@@ -1,8 +1,10 @@
 package org.itau.cats.feign.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.itau.api.model.Breed;
-import org.itau.cats.feign.CatFeign;
 
 import java.util.List;
 

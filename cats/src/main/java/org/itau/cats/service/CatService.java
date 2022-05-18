@@ -12,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import javax.websocket.server.PathParam;
 import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
@@ -22,18 +21,19 @@ public class CatService {
 
     private CatFeign catFeign;
     private BreedRepository breedRepository;
+
     private PictureRepository pictureRepository;
     @Autowired
     private BeanConfig mapper;
 
     @Autowired
-    public CatService(CatFeign catFeign, BreedRepository breedRepository, BeanConfig mapper) {
+    public CatService(CatFeign catFeign, BreedRepository breedRepository, BeanConfig mapper, PictureRepository pictureRepository) {
         this.catFeign = catFeign;
         this.breedRepository = breedRepository;
         this.mapper = mapper;
+        this.pictureRepository = pictureRepository;
     }
 
-    @Transactional
     public List<BreedsRespDto> getAllBreeds() {
         var breedsRespDto = catFeign.getAllBreeds();
         var breeds = breedsRespDto.stream()
@@ -44,7 +44,7 @@ public class CatService {
         return breedsRespDto;
     }
 
-    public List<CatPictureRespDto> getImagesByCategory(Long categoryId){
+    public List<CatPictureRespDto> getImagesByCategory(Long categoryId) {
         var catPictureRespDto = catFeign.getImagesByCategory(categoryId);
         var pictures = catPictureRespDto.stream()
                 .map(catPictureRespDto1 -> mapper.getDozerMapper().map(catPictureRespDto1, Pictures.class))
