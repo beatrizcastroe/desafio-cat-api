@@ -20,7 +20,7 @@ Spring / Spring Cloud Task / Spring Data / Hibernate / JPA / Spring Open Feign
 
 ## Pré-requisitos da Montagem
 
-1. Durante esse projeto, foi utilizado o banco de dados local do MySQL. 
+1. Durante esse projeto, foi utilizado o banco de dados local do MySQL. Sendo assim, dentro dos arquivos application.properties dos microserviços, deve-se configurar o Username e password de seu banco de dados local.
 2. Ao iniciar o projeto, primeiramente deve-se iniciar o main da aplicação AboutCatsApplication, do serviço cat. Dessa forma, automaticamente será criado o banco de dados db_cat, com suas tabelas e os dados solicitados (foi utilizado o Open Feign e Spring Cloud).
 3. Após isso, podemos parar a aplicação acima e iniciar o main da ApiAplication, podendo, assim, utilizar a collection no postman para fazer as requisições exigidas pelo desafio.
 4. O projeto foi organizado de acordo com a arquitetura MVC.
@@ -39,7 +39,7 @@ Visto o curto prazo, alguns pontos a melhorar são: Deploy do microserviço na n
 
 ## Sobre a autora
 
-Meu nome é Beatriz Castro, tenho 22 anos e estou finalizei o bootcamp da Generation Brasil. Lá, além dos meus aprimoramentos nas soft-skills, a parte técnica foi voltada para JAVA e seus frameworks. Tive experiências profissionais que envolvem Perl, Javascript, Node e como objetivo profissional, quero utilizar meus aprendizados no bootcamp e estudos pessoais em JAVA. 
+Meu nome é Beatriz Castro, tenho 22 anos e finalizei o bootcamp da Generation Brasil em outubro de 2021. Lá, além dos meus aprimoramentos nas soft-skills, a parte técnica foi voltada para JAVA e seus frameworks. Tive experiências profissionais que envolvem Perl, Javascript, Node e como objetivo profissional, quero utilizar meus aprendizados no bootcamp e estudos pessoais em JAVA. 
 
 
 
